@@ -3,7 +3,7 @@
   "name": "Go Display It, Canvas!",
   "version": "1.0",
 
-  "description": "Allows UCSD Canvas to display .go file correctly in a nice formatting.",
+  "description": "Allows UCSD Canvas to display .go file correctly in a nice syntax highlight.",
 
   "icons": {
     "96": "icons/godisplayitcanvas_icon.png"
