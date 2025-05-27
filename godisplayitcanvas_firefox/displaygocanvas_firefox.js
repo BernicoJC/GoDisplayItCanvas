@@ -50,7 +50,7 @@ if (previewer.hasAttribute("data-attachment_preview_processing") &&
         getGoFileContent(download_element.href)
         .then(text => {
             // If the function returns a text, display it in the prepared code element.
-            code.innerHTML = text;
+            code.textContent = text;
             pre.style.display = "block";
             if (typeof Prism !== "undefined") {
                 Prism.highlightElement(code);
@@ -59,7 +59,7 @@ if (previewer.hasAttribute("data-attachment_preview_processing") &&
         .catch(error => {
             // If it returns with an error on fetching, say it in a <p> element.
             const error_message = document.createElement("p");
-            error_message.innerHTML = error;
+            error_message.textContent = error;
             content_element.insertBefore(error_message, previewer);
             console.error(error);
         })
