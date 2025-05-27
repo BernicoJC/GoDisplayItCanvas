@@ -7,14 +7,19 @@ Say goodbye to "This document cannot be displayed within Canvas." or downloading
 
 ## Supported Browser
 This extension has only been tested for these two browsers.
-- Firefox
 - Chrome
+- Firefox
 
 ## Installation
-### From Chrome Web Store / Firefox Add-ons
+### From Firefox Add-ons
 - [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/go-display-it-canvas/)
 
-### Manual Installation
+### Manual Installation (Especially for Chrome)
+- Chrome
+  - Download or clone this repository.
+  - Go to `chrome://extensions/.`.
+  - Enable Developer mode.
+  - Click Load unpacked and select the project folder.
 - Firefox
   - Download or clone this repository.
   - Go to `about:debugging`.
