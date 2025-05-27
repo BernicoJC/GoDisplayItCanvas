@@ -19,12 +19,12 @@ This extension has only been tested for these two browsers.
   - Download or clone this repository.
   - Go to `chrome://extensions/.`.
   - Enable Developer mode.
-  - Click Load unpacked and select the project folder.
+  - Click Load unpacked and select the project folder (`./godisplayitcanvas_chrome`).
 - Firefox
   - Download or clone this repository.
   - Go to `about:debugging`.
   - Click This Firefox > Load Temporary Add-on.
-  - Select the manifest.json file from the project.
+  - Select the manifest.json file from the project (`./godisplayitcanvas_firefox/manifest.json`).
 
 ## Disclaimer
 - Currently, this extension uses pattern matching that’s rigid that might change. As such, it might have to be updated whenever Canvas uses a newer server DNS that points to the true location of the file.
