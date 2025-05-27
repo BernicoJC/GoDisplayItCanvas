@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Go Display It, Canvas!",
+  "version": "1.0",
+
+  "description": "Allows UCSD Canvas to display .go file correctly in a nice formatting.",
+
+  "icons": {
+    "96": "icons/godisplayitcanvas_icon.png"
+  },
+
+  "permissions": [
+    "scripting"
+  ],
+  
+  "host_permissions": [
+    "*://*.canvas.ucsd.edu/*",
+    "*://ucsd.instructure.com/*",
+    "*://*.inscloudgate.net/*",
+    "*://*.canvas-user-content.com/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.canvas.ucsd.edu/courses/*/files/*",
+        "*://ucsd.instructure.com/courses/*/files/*"
+      ],
+      "js": [
+        "displaygocanvas_chrome.js",
+        "libs/prism.js"
+      ],
+      "css": [
+        "libs/prism.css"
+      ]
+    }
+  ]
+}
