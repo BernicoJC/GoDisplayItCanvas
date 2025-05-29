@@ -37,7 +37,7 @@ This extension has only been tested for these two browsers.
 5. And that's it, you should be able to see the file's content, highlighted as if it's in VSC!
 
 ## Disclaimer
-- Currently, this extension uses pattern matching that’s rigid that might change. As such, it might have to be updated whenever Canvas uses a newer server DNS that points to the true location of the file.
+- Currently, this extension uses pattern matching that’s rigid that might change. As such, it might have to be updated whenever Canvas uses a newer server DNS that points to the true location of the file. Furthermore, the extension has access to only these URLs and Canvas itself.
 - This extension is developed and tested to work for UCSD Canvas. Although the script will work for any other education institution’s Canvas, I can’t guarantee it since there’s no way for me to test it and know their Canvas page’s links. Furthermore, currently, the manifest.json of this extension specifically has UCSD Canvas's links in its regex for permissions and scripts matching, and as such it won't work for any other institution. In the future, I might add support for other institutions too.
 - Similarly, this extension currently only supports displaying .go files. This is because PrismJS requires specification of file type for it to highlight correctly. And since Canvas itself doesn't recognize the file's type, it requires extensive pattern matching that I haven't had the time to support. However, in the future, I might add support for other languages, even those displayable by Canvas (since they turn files like .java to .pdf before displaying it).
 
